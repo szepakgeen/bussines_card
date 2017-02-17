@@ -14,18 +14,35 @@ body
 {
      margin: 0;
      font-family: 'Roboto';
-     font-size: 1.1em;
+     
 }
-
+@media only screen and (min-width: 768px){
+  body {
+      font-size: 1.1em;
+  }
+}
 .main
 {
-    
+    margin: 0;
     height: 100%;
-    width: 100%;
-    
-    
-    
+    width: 100%;    
 }
+#intro
+{
+
+position:absolute;
+width:100%;
+
+background: red;
+
+}
+.video
+{
+    
+    width: 100%;
+    height: auto;
+}
+
 @media only screen and (min-width: 768px){
   .main {
     height: 100%;
@@ -92,7 +109,7 @@ body
 }
 #mute
 {   
-    padding-left: 40px;
+    margin-left: 40px;
     border: transparent;
     background-color: transparent;
     
@@ -159,7 +176,8 @@ body
 {   
     overflow: hidden;
     width: 55%;
-    margin: 10% 25%;
+    margin-left: 25%;
+    margin-top: 10%;
 }
 .quote p.qt
 {
@@ -236,7 +254,7 @@ body
 .icon
 {
     width: 75%;
-    margin: 25% 30%
+    margin: 20% 30%
 }
 
 .about_site
@@ -253,6 +271,23 @@ body
     
   }
 }
+.content_under_line1
+{
+    margin: 0 5%;
+    width: 75%;
+}
+.content_under_line1 p
+{
+   text-align: right;
+   
+}
+.line1 {
+   
+   border-bottom: 1px solid #000;
+   width: 90%;
+   
+    
+ }
 #download
 {
     text-align: center;
@@ -262,13 +297,12 @@ body
 .button_download
 {
     text-align: center;
-    
 }
 @media only screen and (min-width: 768px) {
   .button_download {
    
     margin-top: 10%;
-    margin-left: 35%;
+    margin-left: 10%;
     text-align: center;
     
   }
@@ -292,19 +326,7 @@ body
               color 0.4s ease-in;
 }
 
-.button_download2
-{
-   text-align: center;
-    
-}
-@media only screen and (min-width: 768px) {
-  .button_download2 {
-   
-    margin:10% 45% 0 0;
-    text-align: center;
-    
-  }
-}
+
 
 
 .ghost-button2{
@@ -325,6 +347,19 @@ body
   transition: border-color 0.4s ease-in,
               color 0.4s ease-in;
 }
+.button_download3
+{
+    width: 80%;
+    text-align:center;
+    margin: 5%;
+}
+.line2 {
+   
+   border-bottom: 1px solid #000;
+   width: 90%;
+   
+    
+ }
 #contact
 {
    text-align: center;
@@ -384,6 +419,14 @@ body
 }
 .socials ul li a:hover {
     color: #DE1B4F;
+}
+
+@media only screen and (max-width: 768px) {
+  .socials ul > li a.sound {
+   
+   display: none;
+    
+  }
 }
 
 [class*='grid'],
