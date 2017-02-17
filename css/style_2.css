@@ -2,7 +2,7 @@
 @font-face 
 {
     font-family: 'Gtek Technology';
-    src: url('../fonts/Gtek_Technology.ttf');
+    src: url('../fonts/Gtek_Technology.woff');
 }
 
 *, *:after, *:before {
@@ -26,21 +26,6 @@ body
     margin: 0;
     height: 100%;
     width: 100%;    
-}
-#intro
-{
-
-position:absolute;
-width:100%;
-
-background: red;
-
-}
-.video
-{
-    
-    width: 100%;
-    height: auto;
 }
 
 @media only screen and (min-width: 768px){
@@ -294,11 +279,19 @@ background: red;
     margin-top: 5%;
 }
 
-.button_download
+ .button_download
 {
     text-align: center;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1170px){
+  .button_download {
+   
+    margin-top: 10%;
+    text-align: center;
+    
+  }
+}
+@media only screen and (min-width: 1170px) {
   .button_download {
    
     margin-top: 10%;
@@ -326,8 +319,14 @@ background: red;
               color 0.4s ease-in;
 }
 
-
-
+@media only screen and (max-width: 1170px) {
+  .ghost-button {
+   
+    width: 130px;
+    font-size: 13px;
+      transition:
+  }
+}
 
 .ghost-button2{
   display: inline-block;
@@ -347,11 +346,73 @@ background: red;
   transition: border-color 0.4s ease-in,
               color 0.4s ease-in;
 }
-.button_download3
+
+.button_download2
 {
-    width: 80%;
-    text-align:center;
-    margin: 5%;
+    text-align: center;
+}
+@media only screen and (min-width: 1170px) {
+  .button_download2 {
+   
+    margin-top: 10%;
+    margin-left: 10%;
+    text-align: center;
+    
+  }
+}
+@media only screen and (max-width: 1170px) {
+  .button_download2 {
+   
+    display: none;
+  }
+}
+ .button_download3
+{
+    text-align: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 1170px){
+  .button_download3 {
+   
+    margin-top: 10%;
+    margin-left: -30%;
+    text-align: center;
+    
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .button_download3 {
+   
+    margin-top: 10%;
+    margin-left: 10%;
+    text-align: center;
+    
+  }
+}
+.ghost-button3{
+  display: inline-block;
+  width: 200px;
+  padding: 12px;
+  color: #000;
+  border: 2px solid #000;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  font-size: 20px;
+}
+.ghost-button3:hover,
+.ghost-button3:active {
+  border: 2px solid #DE1B4F;
+  color: #DE1B4F;
+  transition: border-color 0.4s ease-in,
+              color 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1170px) {
+  .ghost-button3 {
+   
+    width: 130px;
+    font-size: 13px;
+  }
 }
 .line2 {
    
@@ -393,36 +454,36 @@ background: red;
     width: 90%;
     margin-top: 5%;
 }
-.socials
+.socialss
 {
     
     width: 90%;
-    margin: 5% auto;
+    margin: 5% 0;
     font-size: 1.1em;
 }
-.socials ul {
+.socialss ul {
     list-style: none;
     text-align: center;
     padding-bottom: 10px;
     text-align: right;
    
 }
-.socials ul li {
+.socialss ul li {
     display: inline;
     text-transform: uppercase;
     padding: 0 10px;
    
 }
-.socials ul li a {
+.socialss ul li a {
     text-decoration: none;
     color: #000;
 }
-.socials ul li a:hover {
+.socialss ul li a:hover {
     color: #DE1B4F;
 }
 
 @media only screen and (max-width: 768px) {
-  .socials ul > li a.sound {
+  .socialss ul > li a.sound {
    
    display: none;
     
