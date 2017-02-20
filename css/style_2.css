@@ -83,7 +83,7 @@ body
 
 .menu
 {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     font-size: 1.1em;
 }
@@ -157,21 +157,22 @@ body
 }
 
 
-.quote
+.quote_main
 {   
     overflow: hidden;
     width: 55%;
     margin-left: 25%;
     margin-top: 10%;
 }
-.quote p.qt
+.quote_main p.qt
 {
    font-size: 30px;
     
 }
 
-#me
+#title
 {
+   margin-top: 10%;
    margin-bottom: 5%;
    text-align: center;
 
@@ -202,34 +203,26 @@ body
 @media only screen and (min-width: 768px) {
   .about_me {
     width: 62%;
-   
+   margin-bottom: 10%;
   }
 }
-.quote1
-{
-    margin-top: 10%;
-}
 
-.line {
-   
+.line_under_content
+{
    border-bottom: 1px solid #000;
    width: 90%;
-   
-    
- }
-
-.content_under_line
-{
-    margin: 0 5%;
-    width: 75%;
-}
-.content_under_line p
-{
-   text-align: right;
-   
 }
 
-#site
+.quote_under_line
+{
+ width: 90%;  
+}
+
+.quote_under_line p
+{
+    text-align: right;
+}
+#site_section
 {
    text-align: center;
    margin-top: 10%;
@@ -256,27 +249,12 @@ body
     
   }
 }
-.content_under_line1
-{
-    margin: 0 5%;
-    width: 75%;
-}
-.content_under_line1 p
-{
-   text-align: right;
-   
-}
-.line1 {
-   
-   border-bottom: 1px solid #000;
-   width: 90%;
-   
-    
- }
-#download
+
+#download_section
 {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
 
  .button_download
@@ -296,6 +274,7 @@ body
    
     margin-top: 10%;
     margin-left: 10%;
+    margin-bottom: 30%;
     text-align: center;
     
   }
@@ -421,34 +400,40 @@ body
    
     
  }
-#contact
+#contact_title
 {
    text-align: center;
    margin-top: 5%;
+   margin-bottom: 5%;
     
 }
 .contacts
 {
     width: 100%;
     margin-left: 30%;
-    margin-top: 10%;
     
 }
-
-.footer
+.contacts_2
 {
-    margin-top: 5%;
-    margin-bottom: 2%;
     width: 100%;
-    text-align: center;
+    margin-left: 30%;
+    margin-bottom: 10%;
 }
+
+
 /*
   Simple Grid
   Project Page - http://thisisdallas.github.com/Simple-Grid/
   Author - Dallas Bass
   Site - http://dallasbass.com
 */
-.line_socials
+
+.content_under_line_socialss
+{
+    margin-left: 0 5%;
+    width: 75%;
+}
+.line_socialss
 {
     border-bottom: 1px solid #000;
     width: 90%;
@@ -458,38 +443,43 @@ body
 {
     
     width: 90%;
-    margin: 5% 0;
+    margin-top: 5%;
     font-size: 1.1em;
 }
-.socialss ul {
+.quote_under_line ul {
     list-style: none;
-    text-align: center;
     padding-bottom: 10px;
     text-align: right;
-   
+    font-size: 1.1em;
 }
-.socialss ul li {
+.quote_under_line ul li {
     display: inline;
     text-transform: uppercase;
     padding: 0 10px;
    
 }
-.socialss ul li a {
+.quote_under_line ul li a {
     text-decoration: none;
     color: #000;
 }
-.socialss ul li a:hover {
+.quote_under_line ul li a:hover {
     color: #DE1B4F;
 }
 
 @media only screen and (max-width: 768px) {
-  .socialss ul > li a.sound {
+  .quote_under_line ul li a.github {
    
-   display: none;
-    
+      display: none;
   }
 }
 
+.footerr
+{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    width: 100%;
+    text-align: center;
+}
 [class*='grid'],
 [class*='col-'],
 [class*='mobile-'],
