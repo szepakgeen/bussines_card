@@ -10,17 +10,20 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 body 
 {
      margin: 0;
      font-family: 'Roboto';
      
 }
+
 @media only screen and (min-width: 768px){
   body {
       font-size: 1.1em;
   }
 }
+
 .main
 {
     margin: 0;
@@ -67,12 +70,20 @@ body
     margin: -100px 0 0 -100px;
     /* is width and height divided by two */
 }
+
+.header_container
+{
+    margin-top: 1%;
+    
+}
+
 .logo
 {
     display: block;
     text-align: right;
     padding-top: 17px;
 }
+
 .button
 {
     display: block;
@@ -81,17 +92,6 @@ body
 
 }
 
-.menu
-{
-    width: 80%;
-    margin: 0 auto;
-    font-size: 1.1em;
-}
-
-.menu p
-{
-    text-align: right;
-}
 #mute
 {   
     margin-left: 40px;
@@ -99,27 +99,55 @@ body
     background-color: transparent;
     
 }
-.menu2 ul {
+
+.menu_container
+{
+    width: 45%;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+
+@media only screen and (max-width: 768px){
+  .menu_container {
+   width: 90%;
+  }
+}
+
+.menu_container p
+{
+    text-align: right;
+}
+
+.menu ul
+{
     list-style: none;
     text-align: center;
     padding-bottom: 10px;
     border-bottom: 1px solid #000;
    
 }
-.menu2 ul li {
+
+.menu ul li 
+{
     display: inline;
     text-transform: uppercase;
     padding: 0 10px;
    
 }
-.menu2 ul li a {
+
+.menu ul li a 
+{
     text-decoration: none;
     color: #000;
 }
-.menu2 ul li a:hover {
+
+.menu ul li a:hover 
+{
     color: #DE1B4F;
 }
-.logo a {
+
+.logo a 
+{
      text-decoration: none;
      color: #000;
      font-family: 'Gtek Technology';
@@ -137,20 +165,21 @@ body
       color: #DE1B4F;
 }
 
-.log
+.logout
 {
     text-align: center;
     padding-top: 10px;
     font-size: 1.25em;
     
 }
-.log a
+
+.logout a
 {
     text-decoration: none;
     color: #DE1B4F;
 }
 
-.log a:hover 
+.logout a:hover 
 {
      text-decoration: none;
      color: #000;
@@ -164,13 +193,14 @@ body
     margin-left: 25%;
     margin-top: 10%;
 }
-.quote_main p.qt
+
+.quote_main p
 {
-   font-size: 30px;
+   font-size: 1.75em;
     
 }
 
-#title
+#title_me
 {
    margin-top: 10%;
    margin-bottom: 5%;
@@ -222,17 +252,13 @@ body
 {
     text-align: right;
 }
-#site_section
-{
-   text-align: center;
-   margin-top: 10%;
-    
-}
 
-.icon
+#title_site
 {
-    width: 75%;
-    margin: 20% 30%
+   margin-top: 10%;
+   margin-bottom: 5%;
+   text-align: center;
+
 }
 
 .about_site
@@ -240,6 +266,14 @@ body
     overflow: hidden;
     
 }
+
+.icon
+{
+    width: 75%;
+    margin: 20% 30%;
+}
+
+
 
 @media only screen and (min-width: 768px) {
   .about_site {
@@ -250,11 +284,28 @@ body
   }
 }
 
-#download_section
+.line_under_content2
 {
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 5%;
+    border-bottom: 1px solid #000;
+    width: 90%;
+}
+
+.quote_under_line2
+{
+    width: 90%;
+}
+
+.quote_under_line2 p
+{
+    text-align: right;
+}
+
+#title_download
+{
+   margin-top: 10%;
+   margin-bottom: 5%;
+   text-align: center;
+
 }
 
  .button_download
@@ -393,13 +444,7 @@ body
     font-size: 13px;
   }
 }
-.line2 {
-   
-   border-bottom: 1px solid #000;
-   width: 90%;
-   
-    
- }
+
 #contact_title
 {
    text-align: center;
@@ -420,32 +465,14 @@ body
     margin-bottom: 10%;
 }
 
-
-/*
-  Simple Grid
-  Project Page - http://thisisdallas.github.com/Simple-Grid/
-  Author - Dallas Bass
-  Site - http://dallasbass.com
-*/
-
-.content_under_line_socialss
-{
-    margin-left: 0 5%;
-    width: 75%;
-}
-.line_socialss
+.line_under_content3
 {
     border-bottom: 1px solid #000;
     width: 90%;
-    margin-top: 5%;
 }
-.socialss
-{
-    
-    width: 90%;
-    margin-top: 5%;
-    font-size: 1.1em;
-}
+
+
+
 .quote_under_line ul {
     list-style: none;
     padding-bottom: 10px;
@@ -473,13 +500,31 @@ body
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .quote_under_line ul li {
+   
+   padding: 0 5px;
+    
+  }
+}
+
 .footerr
 {
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 2%;
     width: 100%;
     text-align: center;
 }
+
+
+
+/*
+  Simple Grid
+  Project Page - http://thisisdallas.github.com/Simple-Grid/
+  Author - Dallas Bass
+  Site - http://dallasbass.com
+*/
+
 [class*='grid'],
 [class*='col-'],
 [class*='mobile-'],
